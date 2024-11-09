@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced Calculator UI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <input type="text" id="display" placeholder="0" disabled />
+      </div>
+      <div class="buttons">
+        <button onclick="clr()" class="clear">C</button>
+        <button onclick="numb('/')" id="operator">/</button>
+        <button onclick="numb('*')" id="operator">*</button>
+        <button onclick="numb('-')" id="operator">-</button>
+
+        <button onclick="numb('7')" id="number">7</button>
+        <button onclick="numb('8')" id="number">8</button>
+        <button onclick="numb('9')" id="number">9</button>
+        <button onclick="numb('+')" id="operator">+</button>
+
+        <button onclick="numb('4')" id="number">4</button>
+        <button onclick="numb('5')" id="number">5</button>
+        <button onclick="numb('6')" id="number">6</button>
+        <button onclick="cal()" id="equals">=</button>
+
+        <button onclick="numb('1')" id="number">1</button>
+        <button onclick="numb('2')" id="number">2</button>
+        <button onclick="numb('3')" id="number">3</button>
+
+        <button onclick="numb('0')" id="number">0</button>
+        <button onclick="numb('.')" style="width: 450%">.</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
