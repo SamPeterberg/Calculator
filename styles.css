@@ -29,8 +29,10 @@ body {
 
 /* Display Screen */
 .display input {
-  width: 100%;
-  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 100px;
   font-size: 2.5em;
   text-align: right;
   padding: 15px;
@@ -112,7 +114,7 @@ button.zero {
 @media (max-width: 480px) {
   .display input {
     font-size: 2em;
-    height: 60px;
+    height: 100px;
   }
 
   button {
