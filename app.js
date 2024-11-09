@@ -37,7 +37,7 @@ function numb(param) {
     var numb = document.getElementById("number");
     numb.Disable;
   } else {
-    display.value += number;
+    display.value += param;
   }
 }
 
@@ -46,5 +46,9 @@ function clr() {
 }
 
 function cal() {
-  display.value = eval(display.value);
+  try {
+    display.value = eval(display.value);
+  } catch (error) {
+    display.value = "Syntax error";
+  }
 }
