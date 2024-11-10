@@ -2,7 +2,7 @@
 
 A sleek, modern, and fully responsive calculator application built with HTML, CSS, and JavaScript. This project mimics a realistic calculator UI, complete with standard arithmetic operations, a percentage button, a clear (AC) button, and a backspace for corrections.
 
-![Calculator UI](<img src="https://i.ibb.co/frGN122/calculator.png">)
+![Calculator UI](<img src="https://i.ibb.co/frGN122/calculator.png"/>)
 
 ## 🌟 Features
 
