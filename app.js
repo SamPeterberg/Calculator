@@ -1,54 +1,37 @@
-var display = document.getElementById("display");
-var Plus = document.getElementById("plus");
-var Minus = document.getElementById("minus");
-var Multiply = document.getElementById("multiply");
-var Divide = document.getElementById("divide");
+var Display = document.getElementById("display");
 
-function plus(param) {
-  if (display.value.at(-1) == "+") {
-    Plus.Disable;
-  } else {
-    display.value += param;
-  }
+function display(value) {
+  Display.value += value;
 }
-function minus(param) {
-  if (display.value.at(-1) == "-") {
-    Minus.Disable;
-  } else {
-    display.value += param;
+
+function displayoperator(operator) {
+    if (Display.value == "") {
+    displayoperator()=disable
   }
-}
-function multiply(param) {
-  if (display.value.at(-1) == "*") {
-    Multiply.Disable;
+ else if (Display.value.at(-1)=="+" || Display.value.at(-1)=="-" || Display.value.at(-1)=="*" || Display.value.at(-1)=="/" || Display.value.at(-1)=="%") {
+    Display.value = Display.value.slice(0,  -1) + operator;
   } else {
-    display.value += param;
-  }
-}
-function divide(param) {
-  if (display.value.at(-1) == "/") {
-    Divide.Disable;
-  } else {
-    display.value += param;
-  }
-}
-function numb(param) {
-  if (display.value.at(-1) == "*") {
-    var numb = document.getElementById("number");
-    numb.Disable;
-  } else {
-    display.value += param;
+    Display.value += operator;
   }
 }
 
-function clr() {
-  display.value = "";
+function displayclear() {
+  Display.value = "";
 }
 
-function cal() {
+function del() {
+  Display.value = Display.value.slice(0, -1);
+}
+
+function calculate() {
+  if (Display.value == "") {
+    calculate()=disable
+  }
   try {
-    display.value = eval(display.value);
-  } catch (error) {
-    display.value = "Syntax error";
+    Display.value = eval(Display.value);
+  } catch {
+    Display.value = "syntax error";
   }
 }
+
+
