@@ -5,12 +5,14 @@ body {
     rgb(246, 6, 246),
     rgb(93, 90, 241)
   );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -22,7 +24,7 @@ h1 {
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 300px;
+  width: 20%;
 }
 
 #display {
@@ -34,30 +36,32 @@ h1 {
   font-weight: bolder;
   background-color: #dbdbdb;
   font-size: 2rem;
-  height: 20vh;
-  margin-bottom: 20px;
+  height: 15vh;
+  margin-bottom: 2rem;
   text-align: right;
   padding: 0 20px;
   border-radius: 5px;
-  width: 260px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .calculator-keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-
+  gap: 1rem;
   font-size: larger;
   font-weight: bolder;
+  width: 100%;
 }
 
 .calculator-keys button {
   background-color: #e0e0e0;
   border: none;
   font-size: 1.5rem;
+  width: 100%;
   padding: 15px;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: pointer; 
   transition: background-color 0.3s;
 }
 
